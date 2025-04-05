@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DisasterAlertApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/red</item>
+
+        <!-- This ensures status bar icons adjust based on the background -->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+
+    <style name="Theme.DisasterAlertApp" parent="Base.Theme.DisasterAlertApp" />
+</resources>

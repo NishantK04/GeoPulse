@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Card Container (Centered) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:padding="24dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Fetch Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFetchPredict"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/purple_500"
+                android:elevation="6dp"
+                android:icon="@drawable/fetch"
+                android:padding="12dp"
+                android:stateListAnimator="@anim/button_press"
+                android:text="Fetch"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Predict Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPredict"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:elevation="6dp"
+                android:icon="@drawable/predict"
+                android:padding="12dp"
+                android:stateListAnimator="@anim/button_press"
+                android:text="Predict"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Prediction Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp">
+
+                <TextView
+                    android:id="@+id/txtPrediction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Prediction will be shown here"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
+
