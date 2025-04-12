@@ -33,11 +33,9 @@
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Settings"
             android:scaleType="fitCenter"
-            android:src="@drawable/addc"
-             />
+            android:src="@drawable/addc" />
 
         <!-- Large SOS Button -->
         <com.google.android.material.button.MaterialButton
